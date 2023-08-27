@@ -1,0 +1,36 @@
+#tuplas
+("Nome", 15, True, None, 43.4)
+- fatiamentos
+dados[:2]
+dados[1:2]
+dados[1:-1]
+dados[1:]
+
+Na criação de uma tupla não é obrigatório passar o parentese
+mas quando fornecer na interporlação de string é obrigatório
+
+- Tuplas são imutaveis, não pode ser alterados
+
+desacomplamento automatico
+pontos = 2,1,99
+x, y, z = pontos
+
+#Listas
+listas são mutaveis, podem ser alteradas
+
+users = []
+
+- inserir usuários
+users.append("Bruno")
+- inserir usuarios em posições especificas
+users.insert(0, "Miguel") # Miguel foi para a posição 0
+- remover usuários da lista
+users.remove("Miguel")
+- Juntar listas
+outros_users = ["Calors", "João"]
+users + outros_users
+ou
+users.extend(outros_users) vai adicionar os outros_users no users
+ou 
+users += ["Marcos"]
+users.pop() remove  ultimo elemento da lista
