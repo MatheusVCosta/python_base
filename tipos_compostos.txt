@@ -34,3 +34,48 @@ users.extend(outros_users) vai adicionar os outros_users no users
 ou 
 users += ["Marcos"]
 users.pop() remove  ultimo elemento da lista
+
+#sets (conjuntos)
+sets não permite repetições
+
+//recomendado criar set é usando a classe set()
+c1 = {1,2,3} / set
+c1 = set((1,2,3)) / tupla
+c1 = set([1,2,3]) / lista
+
+conjunto_a = [1,2,3,4,5]
+
+conjunto_b = [4,5,6,7,8]
+
+# união
+set(conjunto_a) | set(conjunto_b)
+out: {1,2,3,4,5,6,7,8} // remove os itens repetidos
+or 
+out: set(conjunto_a).union(set(conjunto_b))
+
+##recomendo criar já com o set criado
+conjunto_a = set([1,2,3,4,5])
+conjunto_b = set([4,5,6,7,8])
+conjunto_a.union(conjunto_b)
+
+# intercesão // pegar somente itens iguais
+conjunto_a.intersection(conjunto_b)
+out: {4,5}
+or 
+conjunto_a & conjunto_b
+out: {4,5}
+
+#pegar diferença entre as listas
+conjunto_a - conjunto_b
+or
+conjunto_a.difference(conjunto_b)
+
+# diferença simetrica // somente items que não se repetem
+conjunto_a.symmetric_difference(conjunto_b)
+{1,2,3,6,7,8}
+
+#Hash Table
+
+numeros = [1,2,3,4,5,6,7,8,9] // o(n) se n for 10 busca somente 10 vezes, mas se for 1000 vai ser buscado 1000 vezes
+8 in numeros // em caso de busca no python em uma lista, o python busca em toda a lista
+numeros = {1,2,3,4,5,6,7,8,9} // o(1) - constante
