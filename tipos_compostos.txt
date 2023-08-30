@@ -79,3 +79,9 @@ conjunto_a.symmetric_difference(conjunto_b)
 numeros = [1,2,3,4,5,6,7,8,9] // o(n) se n for 10 busca somente 10 vezes, mas se for 1000 vai ser buscado 1000 vezes
 8 in numeros // em caso de busca no python em uma lista, o python busca em toda a lista
 numeros = {1,2,3,4,5,6,7,8,9} // o(1) - constante
+
+# Dicionario
+##merging
+cliente = {"nome": "Bruno", "cod" : 123}
+extra = {"pais": "Portugal"}
+final = {**cliente, **extra}

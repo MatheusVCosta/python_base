@@ -1,0 +1,20 @@
+
+# Escrever texto com print
+- print("Hello world", file=open("hello.txt","a"))
+
+# biblioteca 'os' serve para interagir com recursos da maquina
+- ex:
+    import sys
+    os.system()
+    out: Linux
+
+# Entrada de dados
+    'input'
+    nome = input("Digite seu nome: ") 
+    idade = input("Digite sua idade: ")# por padrão o input só trabalha com inteiro
+    idade = int(input("Digite sua idade: ")) assim vai atribuir um valor inteiro
+    nome = input("Digite seu nome: ").strip() limpa espaços em branco no começo e no final da string
+
+# Entrada de dados usando CLI
+    # CLI ARGS
+    python hello.py --lang=fr_FR
